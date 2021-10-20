@@ -1,0 +1,53 @@
+{
+    "sendGridApiKey":{
+        "display_name": "SendGrid Client API Key",
+        "description": "Please enter sendgrid account api_key",
+        "type": "text",
+        "secure": true,
+        "required": true
+    },
+    "emailID":{
+        "display_name": "Email ID",
+        "description": "Please enter email-id",
+        "type": "email",
+        "secure": true,
+        "required": true
+    },
+    "timeUnit":{
+        "display_name": "Time Unit",
+        "description": " Select hour/minutes as to when to send notification.",
+        "type": "dropdown",
+        "options": [
+            "hours",
+            "minutes"
+            ],
+        "default_value": "hours",
+        "required": true
+    },
+    "every":{
+        "display_name": "Select when should the notification trigger",
+        "description": " - ",
+        "type": "number",
+        "default_value": 24,
+        "required": true
+    },
+    "domainName": {
+      "display_name": "Domain Name",
+      "description": "Please enter your domain name",
+      "type": "domain",
+      "type_attributes": {
+        "product": "freshdesk"
+      },
+      "required": true
+    },
+    "apiKey": {
+      "display_name": "API Key",
+      "description": "Please enter your freshdesk account api_key",
+      "type": "api_key",
+      "secure": true,
+      "required": true,
+      "type_attributes": {
+        "product": "freshdesk"
+      }
+    }
+  }
