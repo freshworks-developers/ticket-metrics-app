@@ -1,4 +1,4 @@
-# Hubspot-Freshdesk Contacts Sync App
+# Freshdesk Tickets Notifier
 
 ## Description:
  This App notifies the agent via an email about few ticket metrics every day on a scheduled time.
