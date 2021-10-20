@@ -25,7 +25,7 @@ exports = {
           to: `${iparams.emailID}`, // Change to your recipient
           from: `${iparams.emailID}`, // Change to your verified sender
           subject: 'Ticket Resolution Notifier',
-          text: 'and easy to do anywhere, even with Node.js',
+          text: 'Ticket Notifier',
           html: htmlMessage
         };
         sgMail.send(msg).then((resp) => {
