@@ -8,7 +8,7 @@
 
 Feature | Notes
 -------------------- | ------
-App Setup event | To create a scheduled event to trigger the mail notification
+App Setup event | To create a scheduled event to trigger the mail notification.
 Scheduled event | To handle the notification which needs to be sent to agent.
 Request Method  | To call the freshdesk-core api for getting details of all the tickets.
 SendGrid Mail   | To Send a mail notifying the user about the tickets metrics.
