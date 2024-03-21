@@ -1,0 +1,14 @@
+{
+  "getTickets": {
+    "schema": {
+      "protocol": "https",
+      "method": "GET",
+      "host": "<%= iparam.domainName %>.freshdesk.com",
+      "path": "/api/v2/tickets",
+      "headers": {
+        "Authorization": "Basic <%= encode(iparam.apiKey) %>",
+        "Content-Type": "application/json"
+      }
+    }
+  }
+}

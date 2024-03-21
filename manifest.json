@@ -1,27 +1,23 @@
 {
-  "platform-version":"2.2",
-  "product":{
-     "freshdesk":{
-        "events":{
-           "onScheduledEvent":{
-              "handler":"onScheduledEventHandler"
-           },
-           "onAppInstall":{
-              "handler":"onAppInstallHandler"
-           }
+  "platform-version": "2.3",
+  "product": {
+    "freshdesk": {
+      "events": {
+        "onScheduledEvent": {
+          "handler": "onScheduledEventHandler"
+        },
+        "onAppInstall": {
+          "handler": "onAppInstallHandler"
         }
-     }
+      }
+    }
   },
-  "dependencies":{
-     "data-forge":"1.8.17",
-     "@sendgrid/mail":"7.4.2",
-     "base-64": "1.0.0"
+  "dependencies": {
+    "data-forge": "1.8.17",
+    "@sendgrid/mail": "7.4.2"
   },
-  "whitelisted-domains":[
-      "https://*.freshdesk.com"
-  ],
-  "engines":{
-     "node":"12.22.6",
-     "fdk":"7.1.0"
+  "engines": {
+    "node": "18.17.0",
+    "fdk": "9.1.0"
   }
 }
