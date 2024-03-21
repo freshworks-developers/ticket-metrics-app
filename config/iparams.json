@@ -34,20 +34,14 @@
     "domainName": {
       "display_name": "Domain Name",
       "description": "Please enter your domain name",
-      "type": "domain",
-      "type_attributes": {
-        "product": "freshdesk"
-      },
+      "type": "text",
       "required": true
     },
     "apiKey": {
       "display_name": "API Key",
       "description": "Please enter your freshdesk account api_key",
-      "type": "api_key",
+      "type": "text",
       "secure": true,
-      "required": true,
-      "type_attributes": {
-        "product": "freshdesk"
-      }
+      "required": true
     }
   }

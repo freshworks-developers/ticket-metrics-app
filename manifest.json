@@ -1,27 +1,27 @@
 {
-    "platform-version": "2.3",
-    "product": {
-      "freshdesk": {
-        "events": {
-          "onScheduledEvent": {
-            "handler": "onScheduledEventHandler"
-          },
-          "onAppInstall": {
-            "handler": "onAppInstallHandler"
-          }
+  "platform-version": "3.0",
+  "modules": {
+    "common": {
+      "events": {
+        "onAppInstall": {
+          "handler": "onAppInstallHandler"
         },
-        "requests": {
-            "getTickets" : {}
+        "onScheduledEvent": {
+          "handler": "onScheduledEventHandler"
         }
-      }
-    },
-    "dependencies": {
-      "data-forge": "1.8.17",
-      "@sendgrid/mail": "7.4.2"
-    },
-    "engines": {
-      "node": "18.17.0",
-      "fdk": "9.1.0"
+      },
+      "requests": {
+        "getTickets" : {}
     }
+  },
+    "support_ticket": {}
+    },
+  "dependencies": {
+    "data-forge": "1.8.17",
+    "@sendgrid/mail": "7.4.2"
+  },
+  "engines": {
+    "node": "18.17.0",
+    "fdk": "9.1.0"
   }
-  
+}

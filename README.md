@@ -4,6 +4,11 @@
  This App notifies the agent via an email about few ticket metrics every day on a scheduled time.
  ***
 
+| Module | Works in Product |
+| ----- | ------- |
+| `common` | All |
+| `support_ticket` | Freshservice |
+
 ## Features demonstrated
 
 Feature | Notes
@@ -18,12 +23,12 @@ Installation Parameters	| To get api keys of sendgrid for sending mail and the f
 ## Prerequisites:
 
 1. Make sure you have a trial Freshdesk account created
-2. A properly configured [Development environment](https://freshworks.dev/docs/app-sdk/v2.3/freshdesk/app-development-process/)
+2. A properly configured [Development environment](https://freshworks.dev/docs/app-sdk/v3.0/common/app-development-process/)
 3. Make sure that you have created an sendgrid account, have api key for the same. (Note: Finish the verify as sender step to send mail.)
 ***
 
 ## Procedure to run the app:
-1. Run the app locally using the command [`fdk run`](https://freshworks.dev/docs/app-sdk/v2.3/freshdesk/basic-dev-tools/freshworks-cli/#run)
+1. Run the app locally using the command [`fdk run`](https://freshworks.dev/docs/app-sdk/v3.0/common/basic-dev-tools/freshworks-cli/#run)
 2. Go page `http://localhost:10001/custom_configs` in your browser and setup your sendgrid and freshdesk api, domain credentials.
 3. Go to `http://localhost:10001/web/test#` in your browser, select onAppInstall event and click on simulate to trigger AppSetup Event.
 4. User will receive mail notification regarding the ticket metrics everday/hour/minutes as per his configuration. Check the console and mail for the same.
